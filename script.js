@@ -40,9 +40,11 @@ function createDice () {
     });
 }
 
-const result = createDice();
+const res1 = createDice();
+const res2 = createDice();
+const res3 = createDice();
 
-Promise.all([result, result, result])
+Promise.all([res1, res2, res3])
     .then(() => {
       console.log('You are lucky');
     })
